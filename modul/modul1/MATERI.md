@@ -29,6 +29,101 @@ Mengapa keamanan informasi sangat penting? Bayangkan jika data rekening bank And
 3. **Keberlangsungan Bisnis**
    Kebocoran data atau gangguan sistem dapat melumpuhkan operasional bisnis. Bayangkan jika sistem perbankan down selama satu hari - berapa banyak transaksi yang terganggu dan kerugian yang ditimbulkan?
 
+### 1.3 Regulasi dan Undang-Undang Keamanan Informasi di Indonesia
+
+Indonesia memiliki beberapa regulasi dan undang-undang yang mengatur tentang keamanan informasi dan siber. Pemahaman tentang regulasi ini penting untuk memastikan praktik keamanan informasi yang legal dan bertanggung jawab.
+
+#### 1.3.1 UU ITE (UU No. 11 Tahun 2008 jo. UU No. 19 Tahun 2016)
+
+Undang-Undang Informasi dan Transaksi Elektronik (UU ITE) adalah regulasi utama yang mengatur tentang informasi dan transaksi elektronik di Indonesia.
+
+1. **Pasal 30 - Akses Ilegal**
+   - Ayat (1): Melarang akses komputer/sistem elektronik milik orang lain secara ilegal
+   - Ayat (2): Melarang akses untuk memperoleh informasi/dokumen elektronik
+   - Ayat (3): Melarang akses dengan cara melanggar/melampaui sistem pengamanan
+   - Sanksi: Penjara 6-8 tahun dan/atau denda Rp 600 juta - 800 juta
+
+2. **Pasal 31 - Penyadapan**
+   - Ayat (1): Melarang intersepsi/penyadapan atas informasi/dokumen elektronik
+   - Ayat (2): Melarang perubahan, penghilangan, pemindahan, atau penyembunyian informasi elektronik
+   - Sanksi: Penjara maksimal 10 tahun dan/atau denda maksimal Rp 800 juta
+
+3. **Pasal 32 - Integritas Data**
+   - Mengatur tentang modifikasi, perusakan, dan/atau penghilangan informasi elektronik
+   - Sanksi: Penjara 8-10 tahun dan/atau denda Rp 2-5 miliar
+
+4. **Pasal 35 - Pemalsuan**
+   - Melarang manipulasi informasi/dokumen elektronik seolah-olah data otentik
+   - Sanksi: Penjara 12 tahun dan/atau denda Rp 12 miliar
+
+#### 1.3.2 PP PSTE (PP No. 71 Tahun 2019)
+
+Peraturan Pemerintah tentang Penyelenggaraan Sistem dan Transaksi Elektronik mengatur lebih detail tentang:
+
+1. **Persyaratan Sistem Elektronik**
+   - Keamanan sistem
+   - Perlindungan data pribadi
+   - Tata kelola sistem
+
+2. **Kewajiban Penyelenggara Sistem Elektronik**
+   - Menjamin keamanan dan keandalan operasi
+   - Memiliki mekanisme pengamanan
+   - Melakukan audit sistem secara berkala
+
+#### 1.3.3 Permenkominfo No. 4 Tahun 2016
+
+Peraturan tentang Sistem Manajemen Pengamanan Informasi yang mengatur:
+
+1. **Standar Keamanan**
+   - ISO/IEC 27001
+   - Penerapan kontrol keamanan
+   - Manajemen risiko
+
+2. **Kewajiban Penyelenggara**
+   - Sertifikasi keamanan
+   - Pelaporan insiden
+   - Pemeliharaan sistem
+
+#### 1.3.4 UU Perlindungan Data Pribadi (UU No. 27 Tahun 2022)
+
+Undang-undang terbaru yang fokus pada perlindungan data pribadi:
+
+1. **Hak Pemilik Data**
+   - Hak untuk mendapatkan informasi yang jelas
+   - Hak untuk mengakses dan memperbarui data
+   - Hak untuk menghapus data
+   - Hak untuk membatasi pemrosesan
+
+2. **Kewajiban Pengendali Data**
+   - Memperoleh persetujuan
+   - Menjamin keamanan data
+   - Memberitahu kebocoran data
+   - Menghapus data sesuai permintaan
+
+3. **Sanksi**
+   - Administratif hingga Rp 2 miliar
+   - Pidana penjara maksimal 6 tahun
+   - Denda maksimal Rp 6 miliar
+
+#### 1.3.5 Implikasi untuk Ethical Hacking
+
+Bagi praktisi keamanan informasi dan ethical hacker, pemahaman regulasi ini penting untuk:
+
+1. **Batasan Legal**
+   - Memahami apa yang boleh dan tidak boleh dilakukan
+   - Mengetahui konsekuensi hukum
+   - Melindungi diri dan organisasi
+
+2. **Prosedur Testing**
+   - Mendapatkan izin tertulis sebelum testing
+   - Mendokumentasikan semua aktivitas
+   - Melaporkan temuan secara bertanggung jawab
+
+3. **Best Practices**
+   - Mengikuti standar industri
+   - Menjaga kerahasiaan informasi
+   - Menerapkan prinsip "do no harm"
+
 ### 1.3 Ancaman Keamanan Informasi
 
 Ancaman keamanan informasi terus berkembang seiring kemajuan teknologi. Berikut adalah beberapa ancaman utama yang perlu diwaspadai:
