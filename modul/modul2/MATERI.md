@@ -63,63 +63,93 @@ Ethical hacking berbeda dengan hacking ilegal karena dilakukan dengan izin ekspl
 
 ### 1.3 Metodologi Ethical Hacking
 
-Ethical hacking mengikuti metodologi sistematis untuk memastikan pengujian yang menyeluruh dan profesional.
+Metodologi ethical hacking adalah pendekatan sistematis dan terstruktur dalam melakukan pengujian keamanan sistem. Seperti seorang detektif yang mengungkap kasus, seorang ethical hacker harus mengikuti serangkaian langkah yang terorganisir untuk memastikan tidak ada aspek keamanan yang terlewatkan. Metodologi ini terdiri dari beberapa tahap yang saling terkait dan membangun di atas hasil tahap sebelumnya.
 
 #### 1.3.1 Reconnaissance (Pengintaian)
 
-1. **Passive Reconnaissance**
-   - OSINT (Open Source Intelligence)
-   - Whois lookup
-   - DNS enumeration
-   - Social media research
+Reconnaissance adalah tahap awal dan paling kritis dalam proses ethical hacking. Pada tahap ini, ethical hacker mengumpulkan sebanyak mungkin informasi tentang target tanpa berinteraksi langsung dengan sistemnya. Ini seperti tahap pengintaian dalam operasi militer - semakin banyak informasi yang dikumpulkan, semakin besar peluang untuk sukses.
 
-2. **Active Reconnaissance**
-   - Network scanning
-   - Port scanning
-   - Service identification
-   - Version detection
+**Passive Reconnaissance (Pengintaian Pasif)**
+
+Pengintaian pasif melibatkan pengumpulan informasi tanpa berinteraksi langsung dengan target. Bayangkan seperti mengamati sebuah gedung dari kejauhan - Anda bisa melihat siapa yang masuk-keluar, jadwal operasional, dan pola aktivitas tanpa ketahuan.
+
+Beberapa teknik pengintaian pasif meliputi:
+- **OSINT (Open Source Intelligence)**: Mengumpulkan informasi dari sumber publik seperti website perusahaan, media sosial, dan artikel berita. Misalnya, dari LinkedIn bisa didapat informasi tentang teknologi yang digunakan dan struktur organisasi IT.
+- **Whois Lookup**: Mencari informasi tentang registrasi domain, termasuk nama registrar, tanggal registrasi, dan informasi kontak teknis.
+- **DNS Enumeration**: Menganalisis catatan DNS untuk memahami infrastruktur jaringan target, termasuk subdomain, mail server, dan layanan lainnya.
+- **Google Dorking**: Menggunakan operator pencarian khusus untuk menemukan informasi sensitif yang mungkin terekspos di internet.
+
+**Active Reconnaissance (Pengintaian Aktif)**
+
+Berbeda dengan pengintaian pasif, pengintaian aktif melibatkan interaksi langsung dengan sistem target. Ini seperti mencoba membuka pintu-pintu di gedung untuk melihat mana yang terkunci dan mana yang tidak.
+
+Teknik-teknik yang digunakan meliputi:
+- **Network Scanning**: Mengidentifikasi host yang aktif dalam jaringan target
+- **Port Scanning**: Menemukan port yang terbuka dan layanan yang berjalan
+- **Service Identification**: Menentukan versi dan jenis layanan yang berjalan
+- **OS Fingerprinting**: Mengidentifikasi sistem operasi yang digunakan
 
 #### 1.3.2 Scanning
 
-1. **Network Scanning**
-   - Host discovery
-   - Port scanning
-   - Service enumeration
-   - OS fingerprinting
+Scanning adalah tahap di mana ethical hacker mulai memetakan lebih detail tentang sistem target. Jika reconnaissance adalah seperti melihat gedung dari luar, scanning adalah seperti membuat blueprint detail tentang interior gedung.
 
-2. **Vulnerability Scanning**
-   - Automated tools
-   - Manual verification
-   - False positive checking
-   - Risk assessment
+**Network Scanning**
+
+Network scanning adalah proses sistematis untuk mengidentifikasi dan menganalisis komponen jaringan yang aktif. Proses ini meliputi:
+- **Host Discovery**: Menemukan semua perangkat yang aktif dalam jaringan target menggunakan teknik seperti ping sweep dan ARP scanning.
+- **Port Scanning**: Mengidentifikasi port yang terbuka dan protokol yang digunakan, memberikan gambaran tentang layanan yang tersedia.
+- **Service Enumeration**: Mengumpulkan informasi detail tentang layanan yang berjalan, termasuk versi dan konfigurasi.
+- **OS Fingerprinting**: Mengidentifikasi sistem operasi berdasarkan karakteristik respons jaringan.
+
+**Vulnerability Scanning**
+
+Vulnerability scanning adalah proses otomatis untuk mengidentifikasi kerentanan keamanan dalam sistem. Proses ini seperti memeriksa setiap jendela dan pintu untuk menemukan yang rusak atau tidak terkunci dengan benar.
+
+Komponen utama vulnerability scanning meliputi:
+- **Automated Tools**: Penggunaan scanner otomatis seperti Nessus, OpenVAS, atau Qualys untuk menemukan kerentanan umum.
+- **Manual Verification**: Verifikasi manual untuk memastikan hasil scan akurat dan menghilangkan false positive.
+- **Risk Assessment**: Evaluasi tingkat risiko dari setiap kerentanan yang ditemukan.
+- **Prioritization**: Menentukan prioritas perbaikan berdasarkan tingkat risiko dan dampak potensial.
 
 #### 1.3.3 Gaining Access
 
-1. **Exploitation Techniques**
-   - Password attacks
-   - Buffer overflows
-   - SQL injection
-   - Cross-site scripting
+Gaining Access adalah tahap di mana ethical hacker mencoba memanfaatkan kerentanan yang ditemukan untuk mendapatkan akses ke sistem. Ini adalah tahap yang paling sensitif dan harus dilakukan dengan sangat hati-hati untuk menghindari kerusakan sistem.
 
-2. **Post Exploitation**
-   - Privilege escalation
-   - Data extraction
-   - Lateral movement
-   - Persistence
+**Exploitation Techniques**
+
+Exploitation adalah proses memanfaatkan kerentanan yang ditemukan. Beberapa teknik umum meliputi:
+- **Password Attacks**: Mencoba membobol autentikasi melalui brute force, dictionary attack, atau social engineering.
+- **Buffer Overflows**: Memanfaatkan kelemahan dalam pengelolaan memori aplikasi.
+- **SQL Injection**: Menyisipkan kode SQL berbahaya untuk memanipulasi database.
+- **Cross-site Scripting**: Menyisipkan script berbahaya ke dalam halaman web yang akan dieksekusi di browser pengguna.
+
+**Post Exploitation**
+
+Setelah mendapatkan akses awal, ethical hacker akan mencoba:
+- **Privilege Escalation**: Meningkatkan level akses dari user biasa menjadi administrator.
+- **Data Extraction**: Mengidentifikasi dan mengekstrak data sensitif untuk membuktikan potensi risiko.
+- **Lateral Movement**: Bergerak ke sistem lain dalam jaringan.
+- **Persistence**: Memastikan akses tetap tersedia untuk pengujian lanjutan.
 
 #### 1.3.4 Maintaining Access
 
-1. **Backdoors**
-   - Types of backdoors
-   - Persistence mechanisms
-   - Command & Control
-   - Stealth techniques
+Maintaining Access mendemonstrasikan bagaimana penyerang bisa mempertahankan akses ke sistem yang sudah dikompromikan. Tahap ini penting untuk menunjukkan risiko jangka panjang dari sebuah compromise.
 
-2. **Covering Tracks**
-   - Log cleaning
-   - Hiding files
-   - Removing evidence
-   - Anti-forensics
+**Backdoors**
+
+Backdoor adalah mekanisme untuk mempertahankan akses ke sistem yang sudah dikompromikan:
+- **Types of Backdoors**: Berbagai jenis backdoor seperti shell scripts, rootkits, atau trojans.
+- **Persistence Mechanisms**: Teknik untuk memastikan backdoor tetap aktif setelah sistem restart.
+- **Command & Control**: Metode untuk mengendalikan sistem yang dikompromikan dari jarak jauh.
+- **Stealth Techniques**: Cara menyembunyikan keberadaan backdoor dari deteksi.
+
+**Covering Tracks**
+
+Covering tracks adalah proses menghapus bukti aktivitas penetration testing:
+- **Log Cleaning**: Menghapus atau memodifikasi log sistem untuk menghilangkan jejak aktivitas.
+- **Hiding Files**: Menyembunyikan file dan tools yang digunakan selama testing.
+- **Removing Evidence**: Membersihkan semua artifak yang dibuat selama pengujian.
+- **Anti-forensics**: Teknik untuk menghindari analisis forensik.
 
 ### 1.4 Tools dan Teknik
 
