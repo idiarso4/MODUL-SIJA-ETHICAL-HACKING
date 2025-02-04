@@ -1,6 +1,28 @@
 # Modul Pembelajaran Kali Linux untuk Keamanan Informasi
+### SMKN 1 Punggelan
+#### Jurusan Sistem Informasi Jaringan dan Aplikasi (SIJA)
 
-Selamat datang di modul pembelajaran Kali Linux untuk Keamanan Informasi. Modul ini dirancang untuk memberikan pemahaman komprehensif tentang penggunaan Kali Linux dalam konteks keamanan informasi dan ethical hacking.
+## Tentang Modul
+Modul pembelajaran ini dirancang khusus untuk siswa SMK Jurusan Sistem Informasi Jaringan dan Aplikasi (SIJA) SMKN 1 Punggelan. Materi disusun sesuai dengan:
+- Kurikulum SMK terbaru
+- Kebutuhan industri di bidang keamanan informasi
+- Standar kompetensi lulusan SMK
+- Perkembangan teknologi terkini
+
+### Tujuan Pembelajaran Global
+Setelah menyelesaikan seluruh modul ini, siswa SMKN 1 Punggelan jurusan SIJA diharapkan mampu:
+1. Memahami dan menerapkan prinsip keamanan informasi
+2. Mengoperasikan sistem operasi Kali Linux
+3. Menggunakan tools security testing
+4. Melakukan analisis keamanan jaringan
+5. Membuat dokumentasi pengujian keamanan
+
+### Prasyarat
+Siswa diharapkan telah memiliki pengetahuan dasar tentang:
+1. Sistem Operasi Linux
+2. Jaringan Komputer
+3. Pemrograman Dasar
+4. Bahasa Inggris Teknis
 
 ## Detail Modul Pembelajaran
 
